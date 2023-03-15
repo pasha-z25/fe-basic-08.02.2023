@@ -5,34 +5,305 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic template</title>
+  <title>Beauty Page</title>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header class="header py-rem">
-    <div class="container">
-      <nav>
-        <a href="./index.html">Home</a>
-      </nav>
+  <header class="header">
+    <div class="up-line">
+      <div class="container">
+        <nav class="nav flex items-center justify-center gap-30">
+          <a class="nav-link" href="#">Доставка</a>
+          <a class="nav-link" href="#">Оплата</a>
+          <a class="nav-link" href="#">Отзывы</a>
+          <a class="nav-link" href="#">Вопрос - ответ</a>
+          <a class="nav-link" href="#">Контакты</a>
+        </nav>
+      </div>
+    </div>
+    <div class="center-line bg-white">
+      <div class="container flex items-center justify-between">
+        <a class="logo flex items-center" href="./index.html">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_22)">
+              <path d="M57.2204 25.3732L46.6873 35.9064L50.7656 39.9847L61.2987 29.4515L57.2204 25.3732Z"
+                fill="#F13C6E" />
+              <path d="M35.9094 46.7065L25.3762 57.2396L29.4545 61.3179L39.9877 50.7848L35.9094 46.7065Z"
+                fill="#F13C6E" />
+              <path d="M50.5173 18.706L39.9842 29.2391L44.0625 33.3174L54.5956 22.7843L50.5173 18.706Z"
+                fill="#F13C6E" />
+              <path d="M29.2355 40.0106L18.7023 50.5437L22.7806 54.622L33.3138 44.0889L29.2355 40.0106Z"
+                fill="#F13C6E" />
+              <path d="M22.7576 25.3729L18.6793 29.4512L29.2124 39.9843L33.2907 35.906L22.7576 25.3729Z"
+                fill="#F13C6E" />
+              <path d="M29.454 18.6989L25.3757 22.7772L35.9089 33.3104L39.9872 29.2321L29.454 18.6989Z"
+                fill="#F13C6E" />
+              <path d="M50.7592 39.9809L46.6809 44.0592L57.2141 54.5923L61.2924 50.514L50.7592 39.9809Z"
+                fill="#F13C6E" />
+              <path d="M44.092 46.6842L40.0137 50.7625L50.5468 61.2956L54.6251 57.2173L44.092 46.6842Z"
+                fill="#F13C6E" />
+              <path
+                d="M54.6058 65.3942L50.5394 61.3278L40 71.8672L29.4606 61.3278L25.3942 65.3942L40 80L54.6058 65.3942Z"
+                fill="#EFEFEF" />
+              <path
+                d="M18.6722 29.4606L14.6058 25.3942L0 40L14.6058 54.6058L18.6722 50.5394L8.13278 40L18.6722 29.4606Z"
+                fill="#EFEFEF" />
+              <path
+                d="M65.3942 25.3942L61.3278 29.4606L71.8672 40L61.3278 50.5394L65.3942 54.6058L80 40L65.3942 25.3942Z"
+                fill="#EFEFEF" />
+              <path
+                d="M50.5394 18.6722L54.6058 14.6058L40 0L25.3942 14.6058L29.4606 18.6722L40 8.13278L50.5394 18.6722Z"
+                fill="#EFEFEF" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_22">
+                <rect width="80" height="80" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="brand">BEAUTY</span>
+        </a>
+        <div class="callback flex items-center justify-center gap-40">
+          <a class="phone" href="tel:88121234567">8 (812) 123-45-67</a>
+          <button class="btn btn-default">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+    <div class="down-line bg-white">
+      <div class="container">
+        <nav class="nav flex items-center justify-center gap-30">
+          <a class="nav-link" href="#">Парикмахерская</a>
+          <a class="nav-link" href="#">Барбершоп</a>
+          <a class="nav-link" href="#">Маникюр</a>
+          <a class="nav-link" href="#">Педикюр</a>
+          <a class="nav-link" href="#">Массаж</a>
+          <a class="nav-link" href="#">Мебель</a>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="main">
-    <section class="first-section py-rem">
+    <section class="first-section bg-red">
       <div class="container">
-        <h1>First section</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Ab, iure ipsa aliquam porro totam molestias.
-        </p>
-        <img src="./images/nature.png" alt="nature" width="300">
+        <div class="text-wrap">
+          <h1 class="main-title">Супер кресло</h1>
+          <p class="description">
+            Текст акции всегда отражает суть,
+            а не просто болтовню,
+            поэтому внимательнее
+          </p>
+          <a href="#" class="btn btn-red">
+            Подробнее
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2 class="section-title">Специальные предложения</h2>
+        <div class="card-wrapper flex justify-between gap-30">
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_1.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм» гидравлическое
+              Парикмахерское кресло «Норм» гидравлическое
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_2.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм»
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_3.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм» гидравлическое
+              Парикмахерское кресло
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_4.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм» гидравлическое
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+        </div>
+        <h2 class="section-title">Вы недавно смотрели</h2>
+        <div class="card-wrapper flex justify-between gap-30">
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_5.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм» гидравлическое
+              Парикмахерское кресло «Норм» гидравлическое
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_6.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм»
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_7.jpeg" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм» гидравлическое
+              Парикмахерское кресло
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+          <div class="product-card">
+            <img class="picture" src="./images/Chair_8.png" alt="Chair">
+            <p class="description">
+              Парикмахерское кресло «Норм» гидравлическое
+            </p>
+            <p class="price">9 900 $</p>
+            <a href="#" class="btn btn-red btn-small">Купить</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer py-rem">
-    <div class="container">
-      <p>&copy; All rights are reserved</p>
+  <footer class="footer">
+    <div class="up-line bg-white">
+      <div class="container flex gap-30">
+        <div class="nav-group">
+          <h3 class="nav-title">
+            Популярные категории
+          </h3>
+          <hr>
+          <ul class="nav-list">
+            <li class="nav-item">Насадки</li>
+            <li class="nav-item">Инструменты</li>
+            <li class="nav-item">Гель-лаки</li>
+            <li class="nav-item">Дизайн</li>
+            <li class="nav-item">Наращивание</li>
+            <li class="nav-item">Оборудование</li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h3 class="nav-title">
+            Популярные категории
+          </h3>
+          <hr>
+          <ul class="nav-list">
+            <li class="nav-item">Насадки</li>
+            <li class="nav-item">Инструменты</li>
+            <li class="nav-item">Гель-лаки</li>
+            <li class="nav-item">Дизайн</li>
+            <li class="nav-item">Наращивание</li>
+            <li class="nav-item">Оборудование</li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h3 class="nav-title">
+            Популярные категории
+          </h3>
+          <hr>
+          <ul class="nav-list">
+            <li class="nav-item">Насадки</li>
+            <li class="nav-item">Инструменты</li>
+            <li class="nav-item">Гель-лаки</li>
+            <li class="nav-item">Дизайн</li>
+            <li class="nav-item">Наращивание</li>
+            <li class="nav-item">Оборудование</li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h3 class="nav-title">
+            Популярные категории
+          </h3>
+          <hr>
+          <ul class="nav-list">
+            <li class="nav-item">Насадки</li>
+            <li class="nav-item">Инструменты</li>
+            <li class="nav-item">Гель-лаки</li>
+            <li class="nav-item">Дизайн</li>
+            <li class="nav-item">Наращивание</li>
+            <li class="nav-item">Оборудование</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="center-line bg-white">
+      <div class="container flex items-center justify-between">
+        <div class="socials flex items-center">
+          <a href="#" class="social-link">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22.5" cy="22.5" r="21.5" fill="white" stroke="#F13C6E" stroke-width="2" />
+              <path
+                d="M28.5749 15H15.6069C13.0626 15 11 17.1025 11 19.696V26.304C11 28.8975 13.0626 31 15.6069 31H28.5749C31.1192 31 33.1818 28.8975 33.1818 26.304V19.696C33.1818 17.1025 31.1192 15 28.5749 15ZM25.4593 23.3215L19.3938 26.2704C19.2321 26.3489 19.0454 26.2288 19.0454 26.0463V19.9643C19.0454 19.7792 19.237 19.6592 19.399 19.7429L25.4646 22.8761C25.6449 22.9692 25.6418 23.2328 25.4593 23.3215Z"
+                fill="#F13C6E" />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22.5" cy="22.5" r="21.5" fill="white" stroke="#F13C6E" stroke-width="2" />
+              <path
+                d="M35.8947 29.4498C35.8607 29.3766 35.8291 29.3159 35.7997 29.2672C35.3131 28.3909 34.3833 27.3154 33.0109 26.0402L32.9819 26.011L32.9674 25.9966L32.9527 25.982H32.9379C32.3151 25.3882 31.9206 24.9889 31.7554 24.7845C31.4532 24.3951 31.3855 24.001 31.5507 23.6016C31.6674 23.2999 32.1057 22.6627 32.8648 21.6891C33.264 21.1732 33.5802 20.7596 33.8137 20.4481C35.4978 18.2092 36.228 16.7784 36.004 16.1554L35.917 16.0098C35.8585 15.9221 35.7077 15.842 35.4646 15.7688C35.221 15.6959 34.9096 15.6838 34.5299 15.7324L30.3249 15.7615C30.2567 15.7373 30.1595 15.7396 30.0328 15.7688C29.9062 15.7981 29.8429 15.8128 29.8429 15.8128L29.7697 15.8493L29.7116 15.8933C29.6629 15.9223 29.6094 15.9734 29.5509 16.0464C29.4928 16.1192 29.4441 16.2046 29.4053 16.3019C28.9474 17.4797 28.4269 18.5748 27.8428 19.5871C27.4826 20.1907 27.1518 20.7138 26.8497 21.1567C26.548 21.5995 26.2949 21.9257 26.0907 22.1349C25.8861 22.3442 25.7015 22.5119 25.5357 22.6385C25.3702 22.7653 25.2438 22.8188 25.1563 22.7992C25.0686 22.7796 24.986 22.7602 24.9078 22.7408C24.7716 22.6531 24.6621 22.5339 24.5795 22.383C24.4965 22.2322 24.4407 22.0423 24.4115 21.8135C24.3824 21.5846 24.3652 21.3877 24.3603 21.2222C24.3558 21.0569 24.3579 20.823 24.3678 20.5213C24.3779 20.2194 24.3824 20.0151 24.3824 19.908C24.3824 19.5381 24.3896 19.1366 24.4041 18.7034C24.4188 18.2703 24.4308 17.9271 24.4407 17.6742C24.4507 17.4211 24.4553 17.1534 24.4553 16.8711C24.4553 16.5888 24.4381 16.3674 24.4041 16.2067C24.3706 16.0462 24.3191 15.8904 24.2512 15.7394C24.1829 15.5886 24.083 15.4719 23.9519 15.389C23.8205 15.3063 23.6572 15.2406 23.4628 15.1918C22.9468 15.0751 22.2898 15.0119 21.4915 15.0021C19.681 14.9826 18.5177 15.0996 18.0018 15.3526C17.7974 15.4596 17.6124 15.6057 17.4471 15.7905C17.2718 16.0047 17.2473 16.1216 17.3739 16.1409C17.958 16.2284 18.3715 16.4377 18.6149 16.7686L18.7026 16.944C18.7708 17.0705 18.8389 17.2945 18.9071 17.6157C18.9752 17.9368 19.0191 18.2921 19.0384 18.6813C19.087 19.392 19.087 20.0004 19.0384 20.5064C18.9897 21.0127 18.9437 21.4069 18.8997 21.6892C18.8558 21.9715 18.7902 22.2002 18.7026 22.3754C18.6149 22.5506 18.5565 22.6577 18.5273 22.6965C18.4981 22.7354 18.4737 22.7599 18.4544 22.7695C18.3279 22.818 18.1963 22.8427 18.0601 22.8427C17.9237 22.8427 17.7583 22.7745 17.5637 22.6381C17.3691 22.5018 17.1672 22.3145 16.9578 22.076C16.7485 21.8374 16.5125 21.504 16.2495 21.0758C15.9868 20.6475 15.7143 20.1414 15.432 19.5574L15.1984 19.1338C15.0524 18.8614 14.8529 18.4646 14.5998 17.9439C14.3466 17.4231 14.1228 16.9192 13.9282 16.4325C13.8504 16.2281 13.7335 16.0725 13.5778 15.9654L13.5047 15.9215C13.4561 15.8826 13.3781 15.8413 13.2712 15.7974C13.164 15.7534 13.0522 15.7219 12.9353 15.7025L8.93465 15.7316C8.52583 15.7316 8.24844 15.8242 8.10238 16.0092L8.04393 16.0967C8.01473 16.1454 8 16.2233 8 16.3304C8 16.4375 8.0292 16.5689 8.08765 16.7245C8.67168 18.0972 9.3068 19.4209 9.993 20.6961C10.6792 21.9712 11.2755 22.9984 11.7815 23.7766C12.2877 24.5554 12.8036 25.2905 13.3293 25.9814C13.8549 26.6726 14.2029 27.1155 14.3731 27.3101C14.5436 27.505 14.6775 27.6508 14.7748 27.7481L15.1399 28.0985C15.3735 28.3321 15.7166 28.612 16.1692 28.938C16.6219 29.2642 17.1232 29.5854 17.6731 29.902C18.2232 30.2181 18.8631 30.476 19.5933 30.6755C20.3233 30.8752 21.0338 30.9554 21.725 30.9167H23.4042C23.7447 30.8873 24.0027 30.7802 24.1781 30.5954L24.2362 30.5222C24.2752 30.4641 24.3118 30.3739 24.3456 30.2524C24.3797 30.1307 24.3967 29.9967 24.3967 29.8509C24.3867 29.4324 24.4186 29.0553 24.4914 28.7195C24.5642 28.3838 24.6471 28.1307 24.7399 27.9602C24.8326 27.7899 24.9373 27.6462 25.0537 27.5297C25.1704 27.413 25.2536 27.3423 25.3023 27.3179C25.3508 27.2934 25.3895 27.2768 25.4187 27.2668C25.6524 27.189 25.9273 27.2644 26.2439 27.4933C26.5604 27.7221 26.8571 28.0045 27.1347 28.3402C27.4122 28.6762 27.7455 29.0532 28.1348 29.4716C28.5243 29.8903 28.8649 30.2015 29.1568 30.4062L29.4487 30.5814C29.6437 30.6983 29.8968 30.8054 30.2083 30.9027C30.5193 31 30.7918 31.0243 31.0257 30.9757L34.7635 30.9174C35.1332 30.9174 35.4208 30.8562 35.6249 30.7347C35.8293 30.6131 35.9508 30.479 35.99 30.3332C36.029 30.1873 36.0311 30.0217 35.9974 29.8365C35.9628 29.6519 35.9286 29.5227 35.8947 29.4498Z"
+                fill="#F13C6E" />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22.5" cy="22.5" r="21.5" fill="white" stroke="#F13C6E" stroke-width="2" />
+              <path
+                d="M26.9993 13.0042L24.4058 13C21.4921 13 19.6091 14.9319 19.6091 17.922V20.1914H17.0014C16.7761 20.1914 16.5936 20.3741 16.5936 20.5994V23.8875C16.5936 24.1128 16.7763 24.2953 17.0014 24.2953H19.6091V32.5922C19.6091 32.8175 19.7915 33 20.0169 33H23.4192C23.6445 33 23.827 32.8173 23.827 32.5922V24.2953H26.8759C27.1013 24.2953 27.2837 24.1128 27.2837 23.8875L27.285 20.5994C27.285 20.4912 27.2419 20.3876 27.1656 20.311C27.0892 20.2345 26.9852 20.1914 26.877 20.1914H23.827V18.2676C23.827 17.343 24.0473 16.8736 25.2518 16.8736L26.9989 16.873C27.224 16.873 27.4065 16.6903 27.4065 16.4651V13.412C27.4065 13.1871 27.2242 13.0046 26.9993 13.0042Z"
+                fill="#F13C6E" />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22.5" cy="22.5" r="21.5" fill="white" stroke="#F13C6E" stroke-width="2" />
+              <g clip-path="url(#clip0_24704_3)">
+                <path
+                  d="M26.125 12H17.875C14.0786 12 11 15.0786 11 18.875V27.125C11 30.9214 14.0786 34 17.875 34H26.125C29.9214 34 33 30.9214 33 27.125V18.875C33 15.0786 29.9214 12 26.125 12ZM30.9375 27.125C30.9375 29.7787 28.7787 31.9375 26.125 31.9375H17.875C15.2213 31.9375 13.0625 29.7787 13.0625 27.125V18.875C13.0625 16.2213 15.2213 14.0625 17.875 14.0625H26.125C28.7787 14.0625 30.9375 16.2213 30.9375 18.875V27.125Z"
+                  fill="#F13C6E" />
+                <path
+                  d="M22 17.5C18.9626 17.5 16.5 19.9626 16.5 23C16.5 26.0374 18.9626 28.5 22 28.5C25.0374 28.5 27.5 26.0374 27.5 23C27.5 19.9626 25.0374 17.5 22 17.5ZM22 26.4375C20.1052 26.4375 18.5625 24.8948 18.5625 23C18.5625 21.1039 20.1052 19.5625 22 19.5625C23.8948 19.5625 25.4375 21.1039 25.4375 23C25.4375 24.8948 23.8948 26.4375 22 26.4375Z"
+                  fill="#F13C6E" />
+                <path
+                  d="M27.9125 17.8204C28.3173 17.8204 28.6454 17.4922 28.6454 17.0875C28.6454 16.6827 28.3173 16.3546 27.9125 16.3546C27.5077 16.3546 27.1796 16.6827 27.1796 17.0875C27.1796 17.4922 27.5077 17.8204 27.9125 17.8204Z"
+                  fill="#F13C6E" />
+              </g>
+              <defs>
+                <clipPath id="clip0_24704_3">
+                  <rect width="22" height="22" fill="white" transform="translate(11 12)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="callback flex items-center justify-center gap-40">
+          <a class="phone" href="tel:88121234567">8 (812) 123-45-67</a>
+          <button class="btn btn-default">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+    <div class="down-line">
+      <div class="container flex items-center justify-between">
+        <p>
+          Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты
+        </p>
+        <p>
+          Политика конфиденциальности
+        </p>
+      </div>
     </div>
   </footer>
 </body>
