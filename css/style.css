@@ -69,6 +69,32 @@
   right: 2rem;
   bottom: 2rem;
 }
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-black);
+  transition: all 0.2s linear;
+}
+.header .nav-link::after {
+  left: 50%;
+}
+.footer .nav-link::after {
+  left: 0;
+}
+.header .nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+.footer .nav-link:hover::after {
+  width: 100%;
+}
 /*------HEADER-------------------------------------------------------------------*/
 .header .up-line {
   padding-top: 17px;
