@@ -11,6 +11,12 @@
 .flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
 }
@@ -148,6 +154,54 @@
   letter-spacing: 0.05em;
   color: #000000;
   margin-bottom: 20px;
+}
+
+/*--------------------promo-card----------------------------------------------------*/
+.promo-cards {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.promo-card {
+  padding: 35px 45px 35px 40px;
+  flex-grow: 1;
+  max-width: calc(50% - 15px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promo-card.card1 .text {
+  max-width: 250px;
+}
+.promo-card.card2 .text {
+  max-width: 170px;
+}
+.promo-card .promo-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+.promo-card .description {
+  margin-bottom: 25px;
+}
+.promo-card input {
+  background: #ffffff;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 225px;
+  line-height: 25px;
+  padding: 5px 10px;
+  border: none;
+}
+
+/*--------------------partners-wrapper----------------------------------------------------*/
+.partners-wrapper {
+  gap: 1px;
+  margin-bottom: 80px;
+}
+.partners-wrapper .item {
+  padding: 35px;
+  min-width: 23%;
 }
 
 /*--------------------footer----------------------------------------------------*/
