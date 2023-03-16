@@ -9,10 +9,20 @@
   <link rel="shortcut icon" type="image/x-icon" href="./images/icons/favicon.ico">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    function scrollToElem(elem) {
+      event.preventDefault()
+      const target = document.querySelector(elem.hash)
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth"
+      })
+    }
+  </script>
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="up-line">
       <div class="container">
         <nav class="nav flex items-center justify-center gap-30">
@@ -379,6 +389,9 @@
       </div>
     </div>
   </footer>
+  <a href="#header" class="toTop" onclick="scrollToElem(this)">
+    <img src="./images/top.png" alt="to top" width="50">
+  </a>
 </body>
 
 </html>

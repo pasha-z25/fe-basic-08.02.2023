@@ -59,7 +59,11 @@
   background-color: var(--color-white);
   color: var(--color-red);
 }
-
+.toTop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
 /*------HEADER-------------------------------------------------------------------*/
 .header .up-line {
   padding-top: 17px;
