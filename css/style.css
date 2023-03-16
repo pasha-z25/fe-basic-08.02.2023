@@ -43,6 +43,10 @@
   cursor: pointer;
   transition: all 0.2s linear;
 }
+.btn.btn-small {
+  min-width: 130px;
+  line-height: 31px;
+}
 .btn.btn-default {
   border-color: var(--color-red);
 }
@@ -57,6 +61,7 @@
 }
 .btn.btn-red:hover {
   background-color: var(--color-white);
+  border-color: var(--color-red);
   color: var(--color-red);
 }
 .toTop {
@@ -173,6 +178,9 @@ a[href^='tel']:hover {
   letter-spacing: 0.05em;
   color: #000000;
   margin-bottom: 20px;
+}
+.product-card .btn {
+  align-self: center;
 }
 
 /*--------------------promo-card----------------------------------------------------*/
