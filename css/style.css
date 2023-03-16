@@ -94,6 +94,21 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.logo svg path {
+  transition: all 0.2s linear;
+}
+.logo:hover svg path.center-line {
+  fill: var(--secondary-color);
+}
+.logo:hover svg path.border-line {
+  fill: var(--primary-color);
+}
+a[href^='tel'] {
+  transition: all 0.2s linear;
+}
+a[href^='tel']:hover {
+  color: var(--primary-color);
+}
 
 /*-------first-section----------------------------------------------------*/
 
@@ -243,6 +258,17 @@
 .footer .socials {
   gap: 20px;
 }
+.social-link svg circle,
+.social-link svg path {
+  transition: all 0.2s linear;
+}
+.social-link:hover svg circle {
+  stroke: #77a7ff;
+}
+.social-link:hover svg path {
+  fill: #1877f2;
+}
+
 .footer .down-line {
   padding-top: 25px;
   padding-bottom: 25px;

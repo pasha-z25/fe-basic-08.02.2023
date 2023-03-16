@@ -1,4 +1,6 @@
 :root {
+  --primary-color: #f13c6e;
+  --secondary-color: #efefef;
   --container-width: 1110px;
   --basic-space: 1rem;
   --color-red: #f13c6e;
@@ -6,6 +8,7 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --bg-light: #e5e5e5;
+  --font-light: #828282;
 }
 
 * {
