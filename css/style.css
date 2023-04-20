@@ -9,30 +9,45 @@
 }
 
 .slide-item {
-  height: 110px;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
-  text-align: center;
+  height: 90px; /* в мобілки та планшету висота слайдів менше */
+  background: #ffffff; /* як в макеті */
+  border-radius: 12px; /* як в макеті */
+  padding: 25px 0; /* як в макеті */
+  text-align: center; /* щоб зображення автоматично були по центру (а не вгадувати падінгами) */
+}
+.slide-item img {
+  max-height: 100%; /* для того щоб не вказувати розміри зобржденню, а обмежити батьківським розміром (аналогічно ширині) */
+}
+@media (min-width: 992px) {
+  .slide-item {
+    height: 110px; /* для десктопу вона вже збільшена */
+  }
 }
 
+.slick-slide .slide-item {
+  margin-right: var(
+    --slider-space
+  ); /* slick-slide немає додаткової опції я у owl-carousel, тому робимо через стилі */
+}
 .slick-list {
-  width: calc(100% + var(--slider-space));
+  width: calc(
+    100% + var(--slider-space)
+  ); /* щоб останній елемент доходив до краю, доведеться саме на цей відступ збільшити обгортку*/
   position: relative;
 }
 .slick-list::after {
+  /* тепер при прогортанні слайдів, ми бачимо на 40рх більше ніж треба, тобто слайди починаються за контейнером */
   content: '';
   display: block;
-  width: var(--slider-space);
+  width: var(
+    --slider-space
+  ); /* ширина яку треба сховати (дорівнюється відступу) */
   height: 100%;
-  position: absolute;
+  position: absolute; /* та розміщюємо його післяя останього слайду */
   top: 0;
   right: 0;
-  background: #f5f5fa;
+  background: #f5f5fa; /* треба імітувати що там нічого немає, тому вказуємо фон як у секції */
   z-index: 2;
-}
-.slick-slide .slide-item {
-  margin-right: var(--slider-space);
 }
 
 .slick-slide img,
@@ -43,5 +58,7 @@
 
 .slick-slider,
 .owl-carousel {
-  max-width: calc(100vw - var(--basic-space) * 2);
+  max-width: calc(
+    100vw - var(--basic-space) * 2 - var(--scrollbar-width)
+  ); /* обмежуємо ширину слайдерів, враховуючи відступи контенеру та ширину полоси прокрутки */
 }

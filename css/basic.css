@@ -1,13 +1,16 @@
 :root {
-  --container-width: 1110px;
-  --basic-space: 30px;
-  --slider-space: 40px;
+  --container-width: 1110px; /* в моєму випадку просто за замовчуванням */
+  --basic-space: 30px; /* для мобільних відступ менший */
+  --slider-space: 20px; /* мінімальний відступ мід слайдами (в мобільці видно при свайпі, без нього слайди "злипаються") */
   --text-color: #252525;
+  --scrollbar-color: #48ad7b; /* колір для полоси прокрутки (так, ми можемо її змінювати) */
+  --scrollbar-width: 6px; /* ширина полоси прокрутки сторінки (потрібна буде при вирахуванні обмеження слайдерів) */
 }
 
 @media (min-width: 550px) {
   :root {
-    --basic-space: 60px;
+    --basic-space: 60px; /* для десктопу вже більший (відповідно макету) */
+    --slider-space: 40px; /* для десктопу відступ відповідно макету */
   }
 }
 
@@ -15,6 +18,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+::-webkit-scrollbar-track {
+  background: 0 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: calc(var(--scrollbar-width) / 2);
+  border: 1px solid transparent;
+}
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) transparent;
 }
 
 a,
