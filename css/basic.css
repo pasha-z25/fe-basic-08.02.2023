@@ -1,7 +1,14 @@
 :root {
   --container-width: 1110px;
-  --basic-space: 1rem;
+  --basic-space: 30px;
+  --slider-space: 40px;
   --text-color: #252525;
+}
+
+@media (min-width: 550px) {
+  :root {
+    --basic-space: 60px;
+  }
 }
 
 * {

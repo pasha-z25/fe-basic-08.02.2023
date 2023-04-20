@@ -9,12 +9,30 @@
 }
 
 .slide-item {
-  /* width: 300px; */
   height: 110px;
   background: #ffffff;
   border-radius: 12px;
   padding: 25px;
   text-align: center;
+}
+
+.slick-list {
+  width: calc(100% + var(--slider-space));
+  position: relative;
+}
+.slick-list::after {
+  content: '';
+  display: block;
+  width: var(--slider-space);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f5f5fa;
+  z-index: 2;
+}
+.slick-slide .slide-item {
+  margin-right: var(--slider-space);
 }
 
 .slick-slide img,
@@ -25,5 +43,5 @@
 
 .slick-slider,
 .owl-carousel {
-  max-width: calc(100vw - 2rem);
+  max-width: calc(100vw - var(--basic-space) * 2);
 }
